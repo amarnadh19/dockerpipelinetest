@@ -12,8 +12,8 @@ RUN pip install -r requirements.txt && \
     pip install curl
 
 # copy the content of the local src directory to the working directory
-COPY app/src/ .
+COPY app/ .
 
 EXPOSE	80
 # command to run on container start
-CMD [ "python", "./server.py" ]
+CMD [ "python", "./src/first.py" ]

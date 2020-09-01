@@ -17,6 +17,9 @@ pipeline {
             agent {
                 docker { image 'mytest' }
             }
+            steps {
+               echo " installed successfully"
+            }
         }
     }
 }
