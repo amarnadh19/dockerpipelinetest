@@ -18,7 +18,7 @@ pipeline {
                 docker { image 'mytest' }
             }
             steps {
-		curl "http://localhost:80"
+                python -v		
             }
         }
     }
