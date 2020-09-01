@@ -8,10 +8,12 @@ WORKDIR /code
 COPY app/requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt && \
+    pip install curl
 
 # copy the content of the local src directory to the working directory
 COPY app/src/ .
 
+EXPOSE	80
 # command to run on container start
 CMD [ "python", "./server.py" ]
