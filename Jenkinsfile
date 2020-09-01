@@ -18,7 +18,8 @@ pipeline {
                 docker { image 'mytest' }
             }
             steps {
-                curl "http://localhost:80"
+               sh "apt install curl -y" 
+               curl "http://localhost:80"
             }
         }
     }
