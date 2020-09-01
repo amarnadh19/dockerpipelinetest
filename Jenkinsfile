@@ -17,8 +17,6 @@ pipeline {
             agent {
                 docker { image 'mytest' }
             }
-            steps {
-            }
         }
     }
 }
