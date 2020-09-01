@@ -18,7 +18,6 @@ pipeline {
                 docker { image 'mytest' }
             }
             steps {
-                python -v		
             }
         }
     }
